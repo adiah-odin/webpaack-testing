@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Prism";
+  src: url("./prism.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  font-family: "Prism";
+}
