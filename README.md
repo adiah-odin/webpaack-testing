@@ -450,3 +450,32 @@ Add a script to easily run the dev server
 ```
 
 Can run `npm start` from the cli.
+
+## Deploying to gh pages
+
+The simplest way is with `gh-pages`.
+
+```
+npm install gh-pages --save-dev
+```
+
+Then add a script in `package.json`
+
+```json
+{
+  "scripts": {
+    ...
+    "deploy": "gh-pages -d dist",
+    // or
+    "deploy": "gh-pages --dist 'dist' --branch 'release'"
+  }
+}
+```
+
+Then can create the dist directory with
+
+```
+npm run build
+```
+
+On gitHub, change the build directory for pages to `gh-pages`.
